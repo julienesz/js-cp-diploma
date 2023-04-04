@@ -11,7 +11,7 @@
 
 При отправке запросов используйте следующие параметры:
 
-* ***Адрес (URL)*** - `https://netology-trainbooking.netoservices.ru/`
+* ***Адрес (URL)*** - `http://f0769682.xsph.ru/`
 * ***Метод (Method)*** - `POST`
 *  ***HTTP заголовок (HttpRequest)***
 
