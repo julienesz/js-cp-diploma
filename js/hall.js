@@ -74,7 +74,7 @@ createRequest('POST', 'https://jscp-diplom.netoserver.ru/', `event=get_hallConfi
 
         selectedSeance.hallConfig = confWrapper.innerHTML;
         selectedSeance.selectedPlaces = selectedChairs;
-        //перенаправление пользователя на страницу payment
+        //перенаправление пользователя на страницу оплаты
         window.location.href = "payment.html";
     });
 
