@@ -1,7 +1,6 @@
-//получаем данные из локального хранилища с ключом seance-data И сохраняем их в переменной
+//получаем данные из локального хранилища И сохраняем их в переменной
 let seanceData = localStorage.getItem('seance-data');
 let selectedSeance = JSON.parse(seanceData);
-localStorage.setItem('seance-data', JSON.stringify(selectedSeance));
 
 
 let confWrapper = document.querySelector('.conf-step__wrapper');
@@ -74,6 +73,7 @@ createRequest('POST', 'https://jscp-diplom.netoserver.ru/', `event=get_hallConfi
 
         selectedSeance.hallConfig = confWrapper.innerHTML;
         selectedSeance.selectedPlaces = selectedChairs;
+        localStorage.setItem('seance-data', JSON.stringify(selectedSeance));
         //перенаправление пользователя на страницу оплаты
         window.location.href = "payment.html";
     });
